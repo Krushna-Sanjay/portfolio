@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'lora', sans-serif;
+    box-sizing: border-box ;
+}
+
+body{
+    /* scroll-behavior: smooth; */
+    background-color: beige;
+    color: rgb(113, 96, 96);  
+}
+ 
+.header{
+    padding: 10px 10%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: pink;
+    /* height: 50px; */
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 23px; */
+}
+
+a:hover{
+    color: maroon;
+    text-decoration: underline;
+    text-underline-offset: 0.7rem;
+}
+
+.left{
+    font-size: 2rem;
+}
+
+.left:hover{
+    cursor: default;
+}
+
+.section{
+    width: 200%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+ .leftsection{
+    /* background-color: lightblue; */
+    /* margin-top: 5%; */
+    font-size: 30px;
+} 
+
+.leftsection h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.rightsection img{
+    
+    border-radius: 15px;
+    width: 20%;
+    padding-right: 0%;
+}
+
+#about{
+    padding: 80px 0;
+}
+
+.box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col1{
+    flex-basis: 35%;
+}
+
+.about-col1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-col2{
+    flex-basis: 60%;
+}
+
+.about-col2 h1{
+    font-size : 60px;
+    font-weight: 600;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0  40px;
+}
+
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links:hover{
+    color: maroon;
+    text-decoration: underline;
+    text-underline-offset: 0.7rem;
+}
+
+.tab-content ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-content{
+    display: none;
+ }
+
+ .tab-content.active-tab{
+    display: block;
+ }
+
+
+
+
+
+.row{
+    /* display: flex;
+    /* align-items: center; */
+    /* justify-content: space-between;
+    margin: 0;
+    padding: 0; */ 
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.col1{
+     display: table;
+   /* justify-content: space-between; */
+    border-radius: 15px;
+    width: 15%;
+    position: relative;
+    /* padding-right: 0%; */
+    /* margin-top: 1rem; */
+    /* margin: 0 23px; */
+}
+
+.col1 img{
+    height: 30%;
+    width: 20%;
+    
+     /* margin: 0 23px; */ 
+}
+
+.col2{
+    /* display: inline-block; */
+    border-radius: 15px;
+}
+
+.btns{
+    width: 70%;
+    margin-right: 7rem;
+}
+
+button{
+    
+    background-color: lightblue;
+    border: rgb(113, 96, 96) 0.1rem solid;
+    /* border-radius: 40%; */
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: beige;
+}
+
+@media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+ body{
+    background: var(--bg-color);
+    color: var(--text-color);
+} */
+
+/* .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 3rem 9%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* z-index: 100; */
+ 
+
+/* .logo{
+    font-size: 3rem;
+     color: var(--text-color); 
+    fontw  800;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+} 
+
+.navbar a{
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+    border-bottom: 3px solid transparent;
+} */
+
+/* .navbar a:hover,
+.navbar a.active{
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+} */
+
+/* #menuicon{
+    font-size: 3.6rem;
+    color: var(--main-color);
+    display: none;
+} */

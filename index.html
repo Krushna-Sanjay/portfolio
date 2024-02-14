@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kay's website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <nav>
+            <div class="left">Krushna Sanjay</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#home">About</a></li>
+                    <li><a href="#home">My Gallery</a></li>
+                    <li><a href="#home">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <br>
+    <br>
+
+    <main>
+        <section class="section">
+            <div class="leftsection">
+                <p class="p1">Hello there! I am </p>
+                <h1 class="title">Krushna Sanjay Gheewala</h1>
+                <p class="p2"> I am a web developer</p>
+
+                <div class="btns">
+                    <button onclick="location.href='#links'">Know More!</button>
+                    <button onclick="location.href='kay_resume.pdf'" download>My Resume</button>
+                </div>
+            </div>
+
+            <div class="rightsection">
+                <img src="kishu.jpg"></img>
+            </div>
+        </section>
+    </main>
+
+    <div id="about">
+        <div class="container">
+            <div class="box">
+                <div class="about-col1">
+                    <img src="cake.jpg"></img>
+                </div>
+                <div class="about-col2">
+                    <h1>About Me</h1>
+                    <p>I am a self-motivated and energetic sophomore B.Sc(IT) student with a strong academic foundation
+                        and passion for technology. Cultivating proficiency in IT principles, data structures,
+                        algorithms and software development. I am currently seeking internship opportunities to gain
+                        hands-on experiences, apply theoretical knowledge and contribute to innovative IT projects. An
+                        adaptable learner with a dedication to staying updated on emerging technologies. Excited to
+                        learn new things and bring a fresh perspective. </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience </p>
+                    </div>
+
+                    <div class="tab-content active-tab" id="skills">
+                        <ul>
+                            <li>Programming Languages : Java,c++,JavaScript</li>
+                            <li>Object-Oriented Programming </li>
+                            <li>Fundamentals of Operating Systems</li>
+                            <li>Data structures and algorithms</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>GLS University</span><br>
+                                Bachelor of Science - BSc, Information Technology<br>
+                                Jul 2022 - Mar 2025</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-content" id="experience">
+                        <ul>
+                            <li><span>Assistant Tutor</span><br>
+                                Learner's zone · Part-time<br>
+                                Sep 2022 - Jan 2023 <br>
+                                Ahmedabad, Gujarat, India</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="Contact_me">
+        <div class="row">
+            <div class="col1">
+                <h3>Reach me here</h3>
+                <br>
+                <a href="krushnagheewala.edu16@gmail.com"><img src="gmail.png"></img></a>
+                <a href="https://www.linkedin.com/in/krushna-gheewala-a05b5719a/"><img src="linkedin.png"></img></a>
+                <a href="https://www.instagram.com/krushna_11?igsh=NHhmMnJyYW1wNWQx"><img
+                        src="instagram (1).png"></img></a>
+                <a href="https://github.com/Krushna-Sanjay"><img src="github.png"></img></a>
+            </div>
+            <div class="col2">
+                <form>
+                    <fieldset>
+                        <legend>Ask me</legend>
+                        <label for="Name">Name </label><br>
+                        <input type="text" placeholder="enter your name">
+                        </input>
+                        <br>
+                        <br>
+                        <label for="Email">Email </label><br>
+                        <input type="text" placeholder="enter your email id">
+                        </input>
+                        <br>
+                        <br>
+                        <label for="Message">Message</label><br>
+                        <textarea placeholder="Ask your queries"></textarea></label>
+                        <br>
+                        <br>
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
