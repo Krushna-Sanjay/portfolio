@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>kay's website</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/styles/">
 </head>
 
 <body>
@@ -14,10 +14,10 @@
             <div class="left">Krushna Sanjay</div>
             <div class="right">
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#home">About</a></li>
-                    <li><a href="#home">My Gallery</a></li>
-                    <li><a href="#home">Contact Me</a></li>
+                    <li><a href="#section">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="/">My Gallery</a></li>
+                    <li><a href="#Contact_me">Contact Me</a></li>
                 </ul>
             </div>
         </nav>
@@ -31,7 +31,7 @@
             <div class="leftsection">
                 <p class="p1">Hello there! I am </p>
                 <h1 class="title">Krushna Sanjay Gheewala</h1>
-                <p class="p2"> I am a web developer</p>
+                <span id="element"></span>
 
                 <div class="btns">
                     <button onclick="location.href='#links'">Know More!</button>
@@ -40,7 +40,7 @@
             </div>
 
             <div class="rightsection">
-                <img src="kishu.jpg"></img>
+                <img src="images/kishu.jpg"></img>
             </div>
         </section>
     </main>
@@ -49,7 +49,7 @@
         <div class="container">
             <div class="box">
                 <div class="about-col1">
-                    <img src="cake.jpg"></img>
+                    <img src="images/cake.jpg"></img>
                 </div>
                 <div class="about-col2">
                     <h1>About Me</h1>
@@ -61,12 +61,12 @@
                         learn new things and bring a fresh perspective. </p>
 
                     <div class="tab-titles">
-                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience </p>
+                        <p class="tab-links" onclick="display()">Skills</p>
+                        <p class="tab-links" onclick="display2()">Education</p>
+                        <p class="tab-links" onclick="display3()">Experience </p>
                     </div>
 
-                    <div class="tab-content active-tab" id="skills">
+                    <div class="tab-content1 " id="skills">
                         <ul>
                             <li>Programming Languages : Java,c++,JavaScript</li>
                             <li>Object-Oriented Programming </li>
@@ -75,7 +75,7 @@
                         </ul>
                     </div>
 
-                    <div class="tab-content" id="education">
+                    <div class="tab-content2" id="education">
                         <ul>
                             <li><span>GLS University</span><br>
                                 Bachelor of Science - BSc, Information Technology<br>
@@ -83,7 +83,7 @@
                         </ul>
                     </div>
 
-                    <div class="tab-content" id="experience">
+                    <div class="tab-content3" id="experience">
                         <ul>
                             <li><span>Assistant Tutor</span><br>
                                 Learner's zone · Part-time<br>
@@ -102,13 +102,13 @@
     <div id="Contact_me">
         <div class="row">
             <div class="col1">
-                <h3>Reach me here</h3>
+                <h3>Reach me here!!</h3>
                 <br>
-                <a href="krushnagheewala.edu16@gmail.com"><img src="gmail.png"></img></a>
-                <a href="https://www.linkedin.com/in/krushna-gheewala-a05b5719a/"><img src="linkedin.png"></img></a>
+                <a href="krushnagheewala.edu16@gmail.com"><img src="images/gmail.png"></img></a>
+                <a href="https://www.linkedin.com/in/krushna-gheewala-a05b5719a/"><img src="images/linkedin.png"></img></a>
                 <a href="https://www.instagram.com/krushna_11?igsh=NHhmMnJyYW1wNWQx"><img
-                        src="instagram (1).png"></img></a>
-                <a href="https://github.com/Krushna-Sanjay"><img src="github.png"></img></a>
+                        src="images/instagram (1).png"></img></a>
+                <a href="https://github.com/Krushna-Sanjay"><img src="images/github.png"></img></a>
             </div>
             <div class="col2">
                 <form>
@@ -135,9 +135,17 @@
             </div>
         </div>
     </div>
-
+    
 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['I am a Web Developer', 'Graphic Designer', 'Web Designer'],
+          typeSpeed: 50,
+        });
+      </script>
 </body>
 
 </html>
