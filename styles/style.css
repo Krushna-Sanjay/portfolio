@@ -12,16 +12,18 @@ body {
 }
 
 .header {
-    padding: 10px 10%;
+    padding: 10px;
 }
 
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
     background-color: pink;
-    /* height: 50px; */
+    height: 50px;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
 }
 
 nav ul {
@@ -68,7 +70,7 @@ a:hover {
 .leftsection {
     /* background-color: lightblue; */
     /* margin-top: 5%; */
-    font-size: 30px;
+    font-size: 5rem,; /*30 px*/
 }
 
 .leftsection h1 {
